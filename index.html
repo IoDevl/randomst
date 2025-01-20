@@ -14,14 +14,20 @@
     <script>
         function getRandomImage() {
             const imageNumber = Math.floor(Math.random() * 7) + 1;
-            return `img/${imageNumber}.jpg`;
+            return `./img/${imageNumber}.jpg`;
         }
 
         function changeImage() {
-            document.querySelector('img').src = getRandomImage();
+            const img = document.querySelector('img');
+            img.src = getRandomImage();s
+            img.onerror = function() {
+                console.error('Failed to load image, retrying...');
+                setTimeout(changeImage, 100);
+            };
         }
 
-        window.onload = changeImage;
+        document.addEventListener('DOMContentLoaded', changeImage);
+        window.addEventListener('load', changeImage);
     </script>
 </body>
 </html>
