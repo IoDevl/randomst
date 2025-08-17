@@ -13,10 +13,6 @@ This project is a lighthearted and humorous website that displays random images 
 
 The site generates random images of gorillas flipping you off. These images are selected randomly and presented as a playful joke with no deeper meaning or intent.
 
-## Contributions
-
-Contributions are welcome. If you have ideas to improve or expand this project, feel free to fork the repository, make your changes, and submit a pull request. Suggestions and feedback are also encouraged to help make this project more enjoyable.
-
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE). Feel free to use, modify, and share responsibly.
